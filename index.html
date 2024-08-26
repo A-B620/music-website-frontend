@@ -20,10 +20,12 @@
         background:#2b2d42;
         display:block;
         height: 5px;
+       
 
     }
     main section div::-webkit-scrollbar-thumb{
         background:#e1e5f2;
+        width: 20px;
        
     }
    .modal::-webkit-scrollbar{
@@ -31,8 +33,9 @@
     width: 2px; height: 2px;
    }
    .modal::-webkit-scrollbar-thumb{
-    background-color: #1f7a8c;
+    background-color: #11151c;
    }
+  
 
 .music-bar input[type="range"] { 
   -webkit-appearance:none;
@@ -48,41 +51,63 @@
   -webkit-appearance:none;
   width:10px;
   height:5px;
-  background:#1f7a8c;
-  box-shadow:-1200px 0px 5px 1200px #1f7a8c,-500px 10px 500px #1f7a8c;
+  background:#212d40
+  ;
+  box-shadow:-1200px 0px 5px 1200px #212d40,-500px 10px 500px #212d40;
   cursor:pointer;
   
 
 }
 </style>
 
-<body class=" m-0  h-screen w-screen  bg-[#bfdbf7] text-[#e1e5f2] overflow-x-hidden">
+<body class=" m-0 lg:w-[75%] h-screen w-screen bg-[#11151c] flex justify-center lg:overflow-x-hidden text-[#e1e5f2]  ">
+      
+  
 
-    <nav class="h-[60px] w-screen fixed z-10 top-0 content-center inline bg-[#022b3a] ">
-            <button class="left-arrow p-1 ml-12 mt-1 bg-[#1f7a8c]"><img src="./assets/imgs/chevron-left.svg" alt=""></button>
-            <button class="right-arrow p-1 bg-[#1f7a8c] "><img src="./assets/imgs/chevron-right.svg" alt=""></button>
+    <nav class="h-[60px]  md:h-[70px] lg:w-[75%] fixed z-10 w-screen top-2   md:left-[305px]  block items-center rounded-lg px-2 content-center  bg-[#212d40] ">
+        <div class="float-left">
+
+            <button class="sidemenubtn p-4 md:hidden opacity-50 hover:opacity-100">
+                <img src="./assets/imgs/menu.svg" alt="" >
+            </button>
+            <button class="left-arrow p-1 mt-1 bg-[#11151c] rounded-full"><img src="./assets/imgs/chevron-left.svg" alt=""></button>
+            <button class="right-arrow p-1 ml-1 bg-[#11151c] rounded-full "><img src="./assets/imgs/chevron-right.svg" alt=""></button>
        
-        <div class="registration-btn space-x-2 absolute  right-6 top-2 ">
-            <button class="signup px-4 py-2  rounded-full bg-[#1f7a8c] ">Signup</button>
-            <button class="login px-4 py-2  rounded-full bg-[#1f7a8c] ">Login</button>
         </div>
-
+        <div class="registration-btn space-x-2 float-right mt-2 ">
+           <button class="signup px-4 py-2  rounded-full opacity-75 hover:opacity-100 " onclick="registrationmodal('signup')">Signup</button>
+           <button class="login px-4 py-2  rounded-full bg-[#11151c] hover:bg-[#171c26] hover:scale-105" onclick="registrationmodal('login')">Login</button>
+        </div>
     </nav>
-    <main class="main flex mt-[66px] space-y-2  flex-col h-max bg-transparent ">
-        <section class=" py-4 block h-fit ">
-            <span class="text-[30px] mx-3 my-4 inline font-bold pl-3">Popular artists</span>
-            <div class=" text-[#022b3a] rounded-md  overflow-x-auto overflow-y-clip ">
-                <div class="card-section p-6  flex h-[300px] justify-center  my-3 items-center  space-x-4 text-center w-max "> <!-- Added w-max -->
-                
-                   
-                    
-       
-          
-                </div>
-            </div>    
-        </section> 
 
-        <section class="bg-[#022b3a]  py-4 block h-fit">
+    <aside  class="sidemenu fixed z-10 left-0 hidden md:flex   px-1 w-[250px] md:w-[300px] h-screen   flex-col bg-[#11151c]  rounded-r-md transition ease-in delay-150  ">
+        <div class="bg-[#212d40] mt-2 p-2 space-y-2 h-[250px] flex flex-col rounded-md">
+            <img src="./assets/imgs/spotify-2-512.png" alt="" class="h-[120px] w-[120px]  pl-2">
+            <a href="main" class="flex"><img src="./assets/imgs/house.svg" alt="" class="px-1">Home</a>
+            <input type="search" name="search" id="search" placeholder="Search" class="text-[#d58936] mt-2 pl-2  py-1 rounded-full">
+        </div>
+        <div class="library-section mt-3 bg-[#212d40] rounded-md">
+            <span class="flex p-2">Your Library<img src="./assets/imgs/circle-plus.svg" alt="" class="py-1 pl-12"></span>
+            <button class="create-library"><img src="" alt=""></button>
+            <div class="about us">
+
+            </div>
+        </div>
+      
+    </aside>
+    <main class="main w-screen lg:w-[75%] absolute md:left-[305px]  top-[80px] md:top-[90px]  rounded-lg space-y-2  flex-col h-fit  bg-[#212d40] ">
+   
+        <section class="artist bg-transparent   py-2 block h-fit">
+            <span class="text-[30px] m-3 inline font-bold  pl-3 cursor-pointer hover:underline hover:underline-offset-8">Popular Artist</span>
+            <button onclick="viewmore('artist-see-more')" class="artistVM hover:underline hover:underline-offset-2 float-end  pr-3 ">see more</button>
+            <div class="  text-[#bfdbf7] rounded-md  overflow-x-auto overflow-y-clip ">
+                <div class="card-section  p-6  flex flex-row h-[320px] justify-center  my-3 items-center  space-x-5 text-center w-max"> <!-- Added w-max -->
+                
+                     
+                </div>
+            </section>
+
+        <section class="album  bg-transparent py-4 block h-fit">
             <span class="text-[30px]  inline font-bold  pl-3 cursor-pointer hover:underline hover:underline-offset-8">Albums</span>
             <div class="  rounded-md  overflow-x-auto overflow-y-clip text-[#022b3a] ">
                 <div class="album-section p-6  flex h-[330px]   my-3 items-center  space-x-4 text-center w-max"> <!-- Added w-max -->
@@ -91,18 +116,18 @@
                 </div>
             </section>
 
-       
-            <section class="bg-[#1f7a8c]  py-2 block h-fit">
+
+            <section class="song bg-transparent   py-2 block h-fit">
                 <span class="text-[30px] m-3 inline font-bold  pl-3 cursor-pointer hover:underline hover:underline-offset-8">Songs</span>
                 <div class="   text-[#bfdbf7] rounded-md  overflow-x-auto overflow-y-clip ">
-                    <div class="song-section  p-6  flex flex-row h-[320px] justify-center  my-3 items-center  space-x-4 text-center w-max"> <!-- Added w-max -->
+                    <div class="song-section p-6  flex flex-row h-[320px] justify-center  my-3 items-center  space-x-4 text-center w-max"> <!-- Added w-max -->
                     
                          
                     </div>
                 </section>
 
                    
-            <div class="modal  h-screen overflow-y-scroll  border-4 border-[#1f7a8c] hidden flex-col md:flex-row absolute  self-center content-center rounded-2xl w-[70%]  bg-[#e1e5f2]">
+            <div class="modal  h-screen overflow-y-scroll  border-4 border-[#1f7a8c] hidden flex-col md:flex-row fixed  content-center rounded-2xl w-[70%]  bg-[#e1e5f2]">
                 <button class="close bg-[#022b3a] rounded-tr-xl absolute top-0 right-0 opacity-50 hover:opacity-100"><img src="./assets/imgs/x.svg" alt=""></button>
                 <div class="  h-screen w-screen m-0 p-1 content-center  rounded-l-xl  block">
                     <img src="" alt="artist-image" class="modalimage  rounded-full    h-[250px] w-[250px]">
@@ -114,14 +139,18 @@
                 </div> 
             </div>
 
+            <section class="">
+
+            </section>
+
             
         
 
 
 
 
-        <div class="music-bar hidden fixed z-10 text-[13px] bottom-0 left-0 items-center   rounded-t-sm p-2  flex-col w-screen h-fit bg-[#022b3a] bg-opacity-75">
-            <button class="close-player absolute right-4 top-0 opacity-30 hover:opacity-100"><img src="./assets/imgs/x.svg" alt=""></button>
+        <div class="music-bar hidden fixed z-10 text-[13px] bottom-0 left-0 items-center   rounded-t-sm p-2  flex-col w-screen h-fit md:flex-1 bg-[#364156] bg-opacity-75">
+            <button class="close-player absolute right-8 top-2 opacity-30 hover:opacity-100"><img src="./assets/imgs/x.svg" alt=""></button>
             <h6 class="Songtitle"></h6>
             <div class=" w-screen px-2 flex items-center my-3 ">
                 <span class="start-time ">00:00</span>
@@ -130,45 +159,603 @@
             </div>
            
             <div class="controls opacity-75  flex items-center space-x-2">
-                <button class="previous rounded-full   bg-[#1f7a8c]  p-2"><img src="./assets/imgs/skip-back.png" alt=""> </button>
-                <button class="backward rounded-full   bg-[#1f7a8c] p-2"><img src="./assets/imgs/backwardbtb.png" alt="" class=" rounded-full"></button>
-                <button class="play rounded-full  bg-[#1f7a8c]  p-1"><img src="./assets/imgs/play.png" alt="" class=" rounded-full p-2"> </button>
-                <button class="forward rounded-full  bg-[#1f7a8c] p-2"><img src="./assets/imgs/fast-forward.png" alt="" class=" m-0 p-0"></button>
-                <button class="next rounded-full  bg-[#1f7a8c]  p-2"><img src="./assets/imgs/skip-next.png" alt="" ></button>   
+                <button class="previous rounded-full   bg-[#11151c]  p-2"><img src="./assets/imgs/skip-back.png" alt=""> </button>
+                <button class="backward rounded-full   bg-[#11151c] p-2"><img src="./assets/imgs/backwardbtb.png" alt="" class=" rounded-full"></button>
+                <button class="play rounded-full  bg-[#11151c]  p-1"><img src="./assets/imgs/play.png" alt="" class=" rounded-full p-2"> </button>
+                <button class="forward rounded-full  bg-[#11151c] p-2"><img src="./assets/imgs/fast-forward.png" alt="" class=" m-0 p-0"></button>
+                <button class="next rounded-full  bg-[#11151c]  p-2"><img src="./assets/imgs/skip-next.png" alt="" ></button>   
             </div>
         </div>
+
+
+   
+
+    <footer class="w-screen h-20">
+
+    </footer>    
     </main>
     
-    <div class="logo border-2"> 
-
-        <button class="sidemenubtn fixed top-0 z-10 p-4">
-            <img src="./assets/imgs/menu.svg" alt="" >
-        </button>
-    </div>
+   
 
        
 
-    <aside  class="fixed z-10  top-0 px-1 w-[250px] h-screen  flex-col bg-[#022b3a]  border-r-[2px] border-[#e1e5f2] rounded-r-md transition-shadow">
-        <img src="./assets/imgs/spotify-2-512.png" alt="" class="h-[120px] w-[120px]  pl-2">
    
-        <div class="bg-[#1f7a8c]  p-2 space-y-2 h-40 flex flex-col rounded-md">
-            <a href="main" class="flex"><img src="./assets/imgs/house.svg" alt="" class="px-1">Home</a>
-            <input type="search" name="search" id="search" placeholder="Search" class="text-[#d58936] mt-2 pl-2  py-1 rounded-full">
-        </div>
-        <div class="library-section mt-3 bg-[#1f7a8c] rounded-md">
-            <span class="flex p-2">Your Library<img src="./assets/imgs/circle-plus.svg" alt="" class="py-1 pl-12"></span>
-            <button class="create-library"><img src="" alt=""></button>
-            <div class="about us">
-
-            </div>
-        </div>
-      
-    </aside>
     
-    <footer class="w-screen h-20 bg-[#022b3a]">
 
-    </footer>
 </body>
-<script src='main.js'>
+<script>
+    const main=document.querySelector('.main');
+    const nav=document.getElementsByName('nav');
+    const sidemenubtn=document.querySelector('.sidemenubtn');
+    const aside=document.querySelector('.sidemenu');
+    const searchlabel=document.getElementsByName('search');
+    const music_bar=document.querySelector('.music-bar');
+    const progressbar=document.querySelector('.progressbar');
+    const modelclosebtn=document.querySelector('.close');
+    const modelsection=document.querySelector('.modal');
+    const Songcards=document.querySelector('.song-section');
+    const albumcards=document.querySelector('.album-section');
+    const artistcards=document.querySelector('.card-section');
+    let ob=[];
+    let queue=[];
+    var state=false;// false=close
+    let btnimg=sidemenubtn.querySelector('img');
+    let q=0;
+    let albumIndexes=[];
+    let md=false;
+    let aViewMore=false;
+
+    function viewmore(elementName){
+        if( elementName === 'artist-see-more')
+        { 
+            let current=document.querySelector('.artist div');
+            let OtherSection=document.querySelector('.album ');
+            let OtherSection2=document.querySelector('.song ');
+            
+        if(aViewMore == true){
+            console.log(elementName);
+            OtherSection.style.display='block';
+            OtherSection2.style.display='block';
+            current.style.display='block';
+            current.style.overflow='auto';
+            artistcards.style.display='flex';
+            artistcards.style.flexDirection='row';
+            artistcards.style.flexWrap='no-wrap';
+            artistcards.style.height='300px';
+            artistcards.style.width='76%';
+            let t=document.querySelector(`.artist button`);
+            console.log(t,'t');
+            t.textContent='See more';
+            aViewMore=false;   
+            console.log('closed')
+
+        }
+        else{
+            console.log(elementName);
+
+            OtherSection.style.display='none';
+            OtherSection2.style.display='none';
+            current.style.width='100vw';
+            current.style.height='max-content';
+            current.style.overflow='auto';
+            artistcards.style.display='flex';
+            artistcards.style.flexWrap='wrap';
+            artistcards.style.height='max-content';
+            artistcards.style.width='75%';
+            artistcards.style.padding='2px 2px';
+            let t=document.querySelector(`.artist button`);
+           
+            console.log(t,'t');
+            t.textContent='See less';
+            console.log('opened')
+
+            aViewMore=true;            
+        }}        
+    };
+
+
+/*function scrollforward(element){
+    let v=document.querySelector(`.${element}`);
+    console.log(v);
+    v.scrollBy({
+       
+                top: 0,
+                left: 350,  // Adjust this value to control scroll distance
+                behavior: 'smooth'  // 'smooth' makes the scroll gradual
+        
+        
+    });
+    
+
+}
+
+function scrollbackwards(element){
+    let v=document.querySelector(`.${element}`);
+    console.log(v);
+    v.scrollBy({
+       
+                top: 0,
+                left: -350,  // Adjust this value to control scroll distance
+                behavior: 'smooth'  // 'smooth' makes the scroll gradual
+        
+        
+    });
+
+}*/
+
+
+
+
+
+function registrationmodal(modaltype){
+    if(modaltype == 'signup'){
+        main.insertAdjacentHTML('afterbegin',`  <form class="modal text-[#fbfffe] h-fit p-6 w-[360px]  space-y-5  fixed z-20 md:left-[50%] top-[20px] self-center rounded-lg  bg-[#11151c]">
+            <button class="close  block  rounded-tr-xl absolute top-1 right-1 opacity-50 hover:opacity-100"><img src="./assets/imgs/x.svg" alt=""></button>
+            <header class=' text-center text-[24px] cursor-default'>Sign up to start listening</header>
+            <div class=' space-y-2 '>
+                <h3 class='pl-2  '>Email:</h3>
+                <input type="email" class='pl-1 ml-2 rounded-md h-[29px] w-[300px] text-[#11151c]' placeholder="example@email.com"></input> 
+                <span class="text-[12px] hidden pl-3 flex ">This email is invalid. Make sure it's written like example@email.com</span>
+            </div>
+            <button class="close bg-[#3a506b]  rounded-full ml-2 w-[300px] h-[40px] bg-opacity-100 hover:bg-opacity-85  ">Next</button>
+             <div class="space-y-1 inline-block pl-3  border-y-2 pb-5 border-[#3a506b] text-[15px] ">
+                <span class=" relative bottom-[14px] left-[134px] inline bg-[#11151c] px-2">or</span>
+                <button class=" border-opacity-50 border-4 rounded-full w-[300px] items-center  p-1 border-[#3a506b] hover:border-opacity-100 flex"><img src="./assets/Google.png" alt="" class="rounded-full mx-2 h-[25px]"><span class="ml-12">Sign up with Google</span></button>
+                <button class=" border-opacity-50 border-4  rounded-full w-[300px] items-center p-1 border-[#3a506b] hover:border-opacity-100 flex"><img src="./assets/facebook.png" alt="" class="rounded-full  mx-2 h-[25px]"><span class="ml-12">Sign up with Facebook</span></button>
+                <button class=" border-opacity-50 border-4 rounded-full w-[300px] items-center p-1 border-[#3a506b] hover:border-opacity-100 flex"><img src="./assets/aple.png" alt="" class="rounded-full  mx-2 h-[25px]"><span class="ml-12">Sign up with Apple</span></button>
+             </div>
+             <span class="text-center block">Already have an account? <button class="underline underline-offset-2">Log in here.</button></span>
+        </form>`
+                )
+        console.log('jdjdjdnd');     
+    }
+
+};
+
+function initializationOfOb() {
+    fetch('./assets/data/songdata.txt')
+    .then(response => response.text())
+    .then(data => {
+      console.log(data); // Do something with the data
+      const lines=data.split('\n');
+      console.log(lines)
+     for(let i=0;i<lines.length;i++){
+        const currentline=lines[i];
+        if (currentline == '\r' || currentline == ''){
+            console.log('empty line');
+        }else{
+            console.log(`line ${i} is =  ${currentline} `);
+            var SongFileData=currentline.split(',',currentline.length);
+           
+                var song={
+                 name:SongFileData[0],
+                 imgsrc:SongFileData[1],
+                 albumName:SongFileData[2],
+                 songName:SongFileData[3],
+                 Songsrc:SongFileData[4],
+                 ArtistPic:SongFileData[5],
+                 Type:SongFileData[6],
+                }
+                let card=`<div onclick="songplay(this)" class="card group space-y-2 h-max w-[250px] hover:cursor-pointer text-start hover:bg-[#11151c] transition ease-in-out delay-200 p-4 rounded-xl hover:-translate-y-1 hover:shadow-xl">
+                            <img src="${song.imgsrc}"  " class=" drop-shadow-xl w-full rounded-xl hover:drop-shadow-none"> 
+                            <h3 class="songname float-start ">${song.songName}</h3>
+                            <button class="playSong p-2 bg-[#364156] float-end rounded-full opacity-0 group-hover:opacity-100  hover:bg-opacity-40 transistion ease-out delay-150"><img src="./assets/imgs/play.png" alt="" class="  rounded-full"></button>
+                            
+                            <span class="Album/Artist text-[#e1e5f2] float-left clear-left">${song.name}</span>
+                           
+                        </div>`
+                Songcards.insertAdjacentHTML("afterbegin",card);
+                ob.push(song);
+                albumIndexes.push(`${song.albumName},${q}`)//pushing album name and its songs
+                q++;
+                console.log(song);
+
+        }    
+     }
+
+     console.log('album =',album);
+     console.log('album sorted =',albumIndexes.length);
+     console.log(ob);
+     SettingUpAlbums();
+    })
+    .catch(err => console.error(err));
+}
+
+sidemenubtn.addEventListener('click',()=>{
+    setTimeout(() => {    
+        if(state == false){
+           aside.style.display='flex';
+           console.log('sidemenu opened');
+           sidemenubtn.style.position='fixed';
+           sidemenubtn.style.zIndex='20';
+           sidemenubtn.style.left='20px';
+           btnimg.src='./assets/imgs/x.svg';
+           state=true;
+           }
+         else{
+           console.log("sidemenu closed");
+           btnimg.src='./assets/imgs/menu.svg';
+           aside.style.display='none';
+          
+           state=false;
+           }  
+    }, 200);
+    });
+
+let album=[];// will store the album name + name of its song 
+let c=0;// keeps track of previous index
+
+function SettingUpAlbums(){
+
+    // first inserting data into the album array which will contain the object song which has 1,album name 2,names of song
+
+    let x=[];//will temporary store the same name of the same/repeating albums
+    let valueA;
+    let song;
+    for(let i=0;i < albumIndexes.length;i++){
+        valueA=albumIndexes[i].substring(',',albumIndexes[i].indexOf(','));
+        console.log('i',i);
+        console.log('valuea',valueA)
+        c=i;
+        for(let g=i+1;g<albumIndexes.length+1;g++){
+            console.log(' g =',g);
+            if(g < albumIndexes.length){
+                let valueB=albumIndexes[g].substring(0,albumIndexes[g].indexOf(','));
+            console.log('value b =',valueB);
+            if(valueA == valueB){
+                x.push(albumIndexes[c].substring(albumIndexes[c].indexOf(',')+1,albumIndexes[c].length));
+                c++;
+                console.log(x);
+                console.log('c = ',c)
+                console.log('matched');
+            }
+       
+           else{
+            x.push(albumIndexes[c].substring(albumIndexes[c].indexOf(',')+1,albumIndexes[c].length));
+            song={
+            name:valueA,
+            songs:x
+             };
+             x=[];
+          
+           console.log('not matched');
+           console.log(x,song);
+          
+           console.log('c =',c);
+           i=g-1;
+         console.log(song);
+         album.push(song);
+         break;
+           
+           }
+      
+
+
+            }
+            else{
+            x.push(albumIndexes[c].substring(albumIndexes[c].indexOf(',')+1,albumIndexes[c].length));
+            song={
+            name:valueA,
+            songs:x
+             };
+             x=[];
+          
+           console.log('not matched');
+           console.log(x,song);
+          
+           console.log('c =',c);
+           i=g-1;
+         console.log(song);
+         album.push(song);
+         break;
+            
+        }
+                      
+        }
+        
+      
+    };
+    console.log('album name = ',album,album[2].songs);
+    //creating albums element in DOM
+    for(let d=0; d < album.length ;d++){
+        console.log('njnjjnj  jnj ')
+        let indexOfsongData=album[d].songs;
+        let index=indexOfsongData[0];
+        console.log(`index now ${index}`);
+        console.log(indexOfsongData.length)
+        if(indexOfsongData.length <= 1){
+            console.log('not an album because only one song');
+            
+        }
+        else{
+            albumcards.insertAdjacentHTML('afterbegin',`
+            <div class="card  group space-y-1 w-[250px] h-max hover:cursor-pointer  text-start bg-[#1f7a8c] hover:bg-opacity-50  transition ease-in-out delay-150 p-4 rounded-md hover:-translate-y-1 hover:shadow-xl">
+                        <img src="${ob[index].imgsrc}" alt="" class="drop-shadow-xl w-full rounded-lg hover:drop-shadow-none">
+                        <h3 class="name ">${ob[index].albumName}</h3>
+                        <span class="type  ">${ob[index].name}</span>
+                        <button class="playSong p-3 mt-2 bg-[#022b3a] float-end rounded-full opacity-0 group-hover:opacity-100  hover:bg-[#bfdbf7] hover:bg-opacity-40  transistion ease-out delay-150"><img src="./assets/imgs/play.png" alt="" class="  rounded-full"></button>
+                </div>`)
+
+        }
+       
+        
+
+        console.log(indexOfsongData);
+     
+    };
+    SettingUPArtistSection();
+};
+let names=new Set([])
+function SettingUPArtistSection(){
+    
+    for(let i=0;i<album.length;i++){
+        let indexOfsongData=album[i].songs;
+        let index=indexOfsongData[0];
+        names.add(ob[index].name);
+    }
+
+
+
+    let convertIntoArray=Array.from(names);
+    console.log(names);
+    console.log(convertIntoArray);
+    for(let i=0;i < ob.length;i++){
+          for(let n=0;n<ob.length;n++){
+             if(ob[i].name === convertIntoArray[n] && ob[i].ArtistPic !== '\r'){
+                artistcards.insertAdjacentHTML('afterbegin',` <div onclick="modalOpen(this)" class="card space-y-1 w-[210px] hover:cursor-pointer  hover:bg-[#2b2d42]    hover:bg-opacity-50   transition ease-in-out delay-100 p-4 rounded-md hover:shadow-2xl">
+                        <img src="${ob[i].ArtistPic}" alt="" class="drop-shadow-xl w-full rounded-full hover:drop-shadow-none">
+                        <h3 class="name ">${ob[i].name}</h3>
+                        <span class="type  text-center">${ob[i].Type}</span>
+                    </div>`)
+                console.log('kd')
+                break 
+
+                }
+            
+            
+         console.log('n=',n);
+         
+
+         };
+        
+         console.log('i',i);
+    };
+ 
+
+
+};
+
+
+
+
+function modalOpen(element){
+    const modalImage=document.querySelector('.modalimage');//getting the class modal image
+    const artistNmae=document.querySelector('.modalname');//getting thec
+    const closebtn=document.querySelector('.close');
+
+    artistNmae.textContent=element.querySelector('.name').textContent;
+    modalImage.src=element.querySelector('img').src;
+    console.log(modalImage.src);
+    console.log(artistNmae);
+    modelsection.style.display='flex';
+    modelsection.flexDirection='column';
+   
+
+            
+    console.log()   
+    setTimeout(() => {
+        md=true;
+    }, 500);
+ 
+          
+       
+ 
+    closebtn.addEventListener('click',()=>{
+        modelsection.style.display='none';
+        md=false;
+    })  
+   
+   
+};
+
+
+
+function formatTime(time) {  // converts th time into mins and seconds .
+    var minutes = Math.floor(time / 60);
+    var seconds = Math.floor(time % 60);
+    return (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+}
+
+
+main.addEventListener('click',()=>{
+     if(md == true){
+        modelsection.style.display='none';
+        md=false;
+        }
+    if (state == true){
+        console.log("sidemenu closed");
+        btnimg.src='./assets/imgs/menu.svg';
+        aside.style.display='none';
+        sidemenubtn.style.left='0px';
+        state=false;
+    }    
+} )
+        
+  
+
+
+function initialise_Music_Bar(song,element){
+    let start_time=music_bar.querySelector('.start-time');// getting the class 'start-time'  which will also display the current time
+    let total_time=music_bar.querySelector('.total-time');// getting the class 'end-time' in the music-bar html element(div) it will display the total audio duration
+    let songtitle=music_bar.querySelector('h6');
+    console.log(start_time); 
+
+    
+    total_time.textContent=formatTime(song.duration);// constant value
+    songtitle.textContent=`Now Playing : ${element.querySelector('.songname').textContent}`;
+    
+    song.addEventListener('timeupdate',function updateBar(){  // dynamic values which have to change 
+            let current_time=song.currentTime;
+            start_time.textContent=formatTime(song.currentTime);
+            progressbar.value=(current_time/song.duration)*100;
+            console.log(progressbar.value);
+           
+       } );
+
+     progressbar.addEventListener('input', () => {
+         let seekTime = (progressbar.value / 100) * song.duration;
+         song.currentTime = seekTime;
+         start_time.textContent = formatTime(seekTime);
+         console.log('Progress bar value:', progressbar.value);
+         } );
+    
+     console.log(start_time,total_time);
+
+
+}
+let currentSong = null; // Variable to keep track of the current song
+let currentElement = null; // Variable to keep track of the current song element
+
+function songplay(element) {
+    var nameOfsong = element.querySelector('.songname').textContent;
+    console.log(nameOfsong);
+
+    // If a song is already playing, pause it and reset the UI
+    if (currentSong) {
+        currentSong.pause();
+        currentSong.currentTime = 0;
+        currentSong.src = ''; // Clear the current song's source to stop it completely
+
+        // Reset the previous song's UI
+        let c = ['bg-opacity-50'];
+        let b = ['opacity-100'];
+        if (currentElement) {
+            currentElement.classList.remove(c);
+            currentElement.querySelector('button').classList.remove(b);
+            currentElement.querySelector('button img').src = './assets/imgs/play.png';
+        }
+    }
+
+    // Find and play the new song
+    for (let i = 0; i < ob.length; i++) {
+        if (ob[i].songName == nameOfsong) {
+            currentSong = new Audio(ob[i].Songsrc); // Create a new Audio object for the song
+            console.log(currentSong.src);
+            music_bar.style.display = 'flex'; // Display the music bar
+
+            currentSongIndex = i;
+            currentElement = element; // Store the current song element
+
+            currentSong.addEventListener('loadedmetadata', () => {
+                console.log(`song now playing ${currentSong.src}`);
+                currentSong.play(); // Play the song
+                initialise_Music_Bar(currentSong, element); // Initialize the music bar
+                controls(currentSong, element, currentSongIndex);
+
+                // Update the UI to reflect the playing state
+                let c = ['bg-opacity-50'];
+                let b = ['opacity-100'];
+                element.classList.add(c);
+                element.querySelector('button').classList.add(b);
+                element.querySelector('button img').src = './assets/imgs/pause.png';
+                element.focus
+            });
+
+            break;
+        }
+    }
+}
+
+function controls(song, element, index) {
+    let playPausebtn = document.querySelector('.play');
+    let forward = document.querySelector('.forward');
+    let next = document.querySelector('.next');
+    let previous = document.querySelector('.previous');
+    let backwards = document.querySelector('.backward');
+    const close_player=document.querySelector('.close-player');
+    playPausebtn.querySelector('img').src = 'assets/imgs/pause.png';
+
+
+    function togglePlayPause() {
+        if (song.paused) {
+            song.play();
+            playPausebtn.querySelector('img').src = 'assets/imgs/pause.png';
+            element.querySelector('button img').src='assets/imgs/pause.png';
+
+        } else {
+            song.pause();
+            playPausebtn.querySelector('img').src = 'assets/imgs/play.png';
+            element.querySelector('button img').src='assets/imgs/play.png';
+        }
+    }
+
+    // Add keydown event listener to the document
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') {
+            event.preventDefault(); // Prevent default spacebar behavior (like scrolling)
+            togglePlayPause();
+        }
+        if(event.code === 'ArrowRight'){
+            event.preventDefault();
+            forwardedSong();
+        }
+        if(event.code === 'ArrowLeft'){
+            event.preventDefault();
+            BackedSong();
+        }
+    });
+     
+
+    // Add click event listener to play/pause button
+    playPausebtn.addEventListener('click', togglePlayPause);
+
+
+    close_player.onclick=()=>{
+        music_bar.style.display='none';
+        currentSong.pause();
+        currentSong.currentTime = 0;
+        currentSong.src = '';
+        let c = ['bg-opacity-50'];
+        let b = ['opacity-100'];   
+        currentElement.classList.remove(c);
+        currentElement.querySelector('button').classList.remove(b);
+        currentElement.querySelector('button img').src = './assets/imgs/play.png';
+    
+   
+
+    };
+    function forwardedSong() {
+        song.currentTime += 5;
+        console.log('forwarded');
+    };
+    forward.onclick =forwardedSong();
+    
+    function BackedSong (){
+        song.currentTime -= 5;
+        console.log('backed');
+    };
+    backwards.onclick = BackedSong()
+
+    next.onclick = () => {
+        if (index > 0 && index < ob.length) {
+            song.play(document.querySelector('.card:nth-child(' + (index + 1) + ')'));
+        }
+    };
+
+    previous.onclick = () => {
+        if (index > 0) {
+            songplay(document.querySelector('.card:nth-child(' + (index - 1) +')'));
+        }
+    };
+};
+initializationOfOb();
+window.onload = () => {
+  
+    state = false;
+   
+};
+
+
+
 </script>
 </html>
