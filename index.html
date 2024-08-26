@@ -501,7 +501,7 @@ function SettingUPArtistSection(){
     console.log(convertIntoArray);
     for(let i=0;i < ob.length;i++){
           for(let n=0;n<ob.length;n++){
-             if(ob[i].name === convertIntoArray[n] && ob[i].ArtistPic !== ' '){
+             if(ob[i].name === convertIntoArray[n] && ob[i].ArtistPic !== ''){
                 artistcards.insertAdjacentHTML('afterbegin',` <div onclick="modalOpen(this)" class="card space-y-1 w-[210px] hover:cursor-pointer  hover:bg-[#2b2d42]    hover:bg-opacity-50   transition ease-in-out delay-100 p-4 rounded-md hover:shadow-2xl">
                         <img src="${ob[i].ArtistPic}" alt="" class="drop-shadow-xl w-full rounded-full hover:drop-shadow-none">
                         <h3 class="name ">${ob[i].name}</h3>
