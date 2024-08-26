@@ -8,7 +8,7 @@ Shubh,./assets/imgs/artist/shubh/album/leo/shubh.jpeg,leo,King Shirt,./assets/im
 
 Shubh,./assets/imgs/artist/shubh/album/leo/shubh.jpeg,leo,You and Me,assets/imgs/artist/shubh/album/leo/You And Me (MUSIC VIDEO) - Shubh.mp3,
 
-The Weekend,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,After Hours,After Hours,assets/imgs/artist/weekend/albums/after hours/The Weeknd - After Hours (Audio).mp3,./assets/imgs/artist/weekend.png,Artist,
+The Weekend,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,After Hours,After Hours,assets/imgs/artist/weekend/albums/after hours/The Weeknd - After Hours (Audio).mp3,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,Artist,
 
 The Weekend,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,After Hours,Blinding Lights,assets/imgs/artist/weekend/albums/after hours/The Weeknd - Blinding Lights (Official Video).mp3,
 
