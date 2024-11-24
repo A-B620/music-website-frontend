@@ -1,24 +1,24 @@
-Atif Aslam,./assets/imgs/artist/atif aslam/albums/Doorie/cover.jpg,Doorie,Hum Kis Gali,./assets/imgs/artist/atif aslam/albums/Doorie/Atif Aslam's Hum Kis Gali ( Dance Mix )'s Lyrics.mp3,./assets/imgs/artist//atif aslam/atif aslam.jpg,Artist,
+Atif Aslam,./assets/imgs/artist/atif aslam/albums/Doorie/cover.jpg,Doorie,Hum Kis Gali,./assets/imgs/artist/atif aslam/albums/Doorie/Atif Aslam's Hum Kis Gali ( Dance Mix )'s Lyrics.mp3,./assets/imgs/artist//atif aslam/atif aslam.jpg,Artist,./assets/imgs/artist//atif aslam/atif3.jpg,
 
 Atif Aslam,./assets/imgs/artist/atif aslam/albums/Doorie/cover.jpg,Doorie,Doorie,./assets/imgs/artist/atif aslam/albums/Doorie/Doorie - Video Song feat. Urvashi Sharma _ Album - Doorie _ Atif Aslam _ Sachin Gupta.mp3,
 
-Imagine Dragons,assets/imgs/artist/imagine dragons/evolve/imagine dragons.webp,Evolve,Believer,assets/imgs/artist/imagine dragons/evolve/Imagine Dragons - Believer (Lyrics).mp3,./assets/imgs/artist/imagine dragons/download.jpeg,Artist,
-
-Shubh,./assets/imgs/artist/shubh/album/leo/shubh.jpeg,leo,King Shirt,./assets/imgs/artist/shubh/album/leo/Shubh - King Shit (Official Audio).mp3,./assets/imgs/artist/shubh/shubh.jpeg,Artist,
+Shubh,./assets/imgs/artist/shubh/album/leo/shubh.jpeg,leo,King Shirt,./assets/imgs/artist/shubh/album/leo/Shubh - King Shit (Official Audio).mp3,./assets/imgs/artist/shubh/shubh.jpeg,Artist,./assets/imgs/artist/shubh/bg.jpg,
 
 Shubh,./assets/imgs/artist/shubh/album/leo/shubh.jpeg,leo,You and Me,assets/imgs/artist/shubh/album/leo/You And Me (MUSIC VIDEO) - Shubh.mp3,
 
-The Weekend,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,After Hours,After Hours,assets/imgs/artist/weekend/albums/after hours/The Weeknd - After Hours (Audio).mp3,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,Artist,
+The Weekend,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,After Hours,After Hours,assets/imgs/artist/weekend/albums/after hours/The Weeknd - After Hours (Audio).mp3,
 
 The Weekend,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,After Hours,Blinding Lights,assets/imgs/artist/weekend/albums/after hours/The Weeknd - Blinding Lights (Official Video).mp3,
+
+The Weekend,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,After Hours,After Hours,assets/imgs/artist/weekend/albums/after hours/The Weeknd - After Hours (Audio).mp3,./assets/imgs/artist/weekend/albums/after hours/download.jpeg,Artist,./assets/imgs/artist/weekend/bg1.jpg,
 
 SIDHU MOSEWALA,assets/imgs/artist/smw/albums/PBX1/PBX_1_(album).jpg,PBX1,Death Route,assets/imgs/artist/smw/albums/PBX1/Death Route Lyrical _ PBX 1 _ Sidhu Moose Wala _ Intense _ Latest Punjabi Songs 2018.mp3,
 
 SIDHU MOSEWALA,assets/imgs/artist/smw/albums/PBX1/PBX_1_(album).jpg,PBX1,I'm Better Now,assets/imgs/artist/smw/albums/PBX1/I'm Better Now Video With Lyrics  _ Sidhu Moose Wala _ Snappy _ Latest Punjabi Songs 2018.mp3,
 
-Lsd,assets/imgs/artist/LSD/4558dd4ac4f82422930ec3224a86cb3c.1000x1000x1.png,LSD,Genius,assets/imgs/artist/LSD/LSD/LSD - Genius.mp3,assets/imgs/artist/LSD/61wjnyun6AL._SY200_QL15_.jpg,Supergroup,
+LSD,assets/imgs/artist/LSD/4558dd4ac4f82422930ec3224a86cb3c.1000x1000x1.png,LSD,Genius,assets/imgs/artist/LSD/LSD/LSD - Genius.mp3,assets/imgs/artist/LSD/61wjnyun6AL._SY200_QL15_.jpg,Supergroup,assets/imgs/artist/LSD/bg.jpg,
 
-Lsd,assets/imgs/artist/LSD/4558dd4ac4f82422930ec3224a86cb3c.1000x1000x1.png,LSD,Thunderclouds,assets/imgs/artist/LSD/LSD/LSD - Thunderclouds (Official Audio).mp3,
+LSD,assets/imgs/artist/LSD/4558dd4ac4f82422930ec3224a86cb3c.1000x1000x1.png,LSD,Thunderclouds,assets/imgs/artist/LSD/LSD/LSD - Thunderclouds (Official Audio).mp3,
 
 Imagine Dragons,assets/imgs/artist/imagine dragons/Mercury – Acts 1 & 2/cover.webp,Mercury – Acts 1 & 2,Bones,assets/imgs/artist/imagine dragons/Mercury – Acts 1 & 2/Imagine Dragons - Bones (Lyrics).mp3,
 
@@ -26,24 +26,25 @@ Imagine Dragons,assets/imgs/artist/imagine dragons/Mercury – Acts 1 & 2/cover.
 
 Imagine Dragons,assets/imgs/artist/imagine dragons/Mercury – Acts 1 & 2/cover.webp,Mercury – Acts 1 & 2,Enemy,assets/imgs/artist/imagine dragons/Mercury – Acts 1 & 2/Imagine Dragons-JID - Enemy.mp3,
 
+Imagine Dragons,assets/imgs/artist/imagine dragons/evolve/imagine dragons.webp,Evolve,Believer,assets/imgs/artist/imagine dragons/evolve/Imagine Dragons - Believer (Lyrics).mp3,./assets/imgs/artist/imagine dragons/download.jpeg,Band,./assets/imgs/artist/imagine dragons/bg.webp,
+
 The Weekend,./assets/imgs/artist/weekend/albums/starboy/download.jpeg,starboy,I feel It Coming,assets/imgs/artist/weekend/albums/starboy/The Weeknd - I Feel It Coming ft. Daft Punk (Official Video).mp3,
 
 The Weekend,./assets/imgs/artist/weekend/albums/starboy/download.jpeg,starboy,Secrets,assets/imgs/artist/weekend/albums/starboy/The Weeknd - Secrets (Official Video).mp3,
 
 The Weekend,./assets/imgs/artist/weekend/albums/starboy/download.jpeg,starboy,Starboy,assets/imgs/artist/weekend/albums/starboy/The Weeknd - Starboy ft. Daft Punk (Official Video).mp3,
 
-SIDHU MOSEWALA,assets/imgs/artist/smw/smw.jpeg,Moosetape,295,assets/imgs/artist/smw/albums/Moosetape/295 (Official Audio) _ Sidhu Moose Wala _ The Kidd _ Moosetape.mp3,./assets/imgs/artist/smw/smw.jpeg,Artist,
-
 SIDHU MOSEWALA,assets/imgs/artist/smw/smw.jpeg,Moosetape,GOAT,assets/imgs/artist/smw/albums/Moosetape/GOAT (Full Video) Sidhu Moose Wala _ Wazir Patar _ Sukh Sanghera _ Moosetape.mp3,
 
 SIDHU MOSEWALA,assets/imgs/artist/smw/smw.jpeg,Moosetape,IDGAF,assets/imgs/artist/smw/albums/Moosetape/IDGAF (Full Video) Sidhu Moose Wala _ Morrisson _ Steel Banglez _ TheKidd _ SukhSanghera _ Moosetape.mp3,
 
-Bayan,assets/imgs/artist/bayan/images.png,'',Nahi Milta,assets/imgs/artist/bayan/Bayaan - Nahin Milta (Official Video).mp3,assets/imgs/artist/bayan/images.png,Rock Band,
+Bayan,assets/imgs/artist/bayan/images.png,'',Nahi Milta,assets/imgs/artist/bayan/Bayaan - Nahin Milta (Official Video).mp3,assets/imgs/artist/bayan/images.png,Rock Band,assets/imgs/artist/bayan/bg.jpg,
 
-Karen Aujla,assets/imgs/artist/Karan aujla/making memories/kA.jpg,Making Memories,Admirin' You,assets/imgs/artist/Karan aujla/making memories/Admirin' You (Official Video) Karan Aujla _ Ikky _ Making Memories _ Latest Punjabi Songs 2023.mp3,assets/imgs/artist/Karan aujla/making memories/kA.jpg,Artist,
+SIDHU MOSEWALA,assets/imgs/artist/smw/smw.jpeg,Moosetape,295,assets/imgs/artist/smw/albums/Moosetape/295 (Official Audio) _ Sidhu Moose Wala _ The Kidd _ Moosetape.mp3,./assets/imgs/artist/smw/smw.jpeg,Artist,./assets/imgs/artist/smw/bg.jpg,
+
+Karen Aujla,assets/imgs/artist/Karan aujla/making memories/kA.jpg,Making Memories,Admirin' You,assets/imgs/artist/Karan aujla/making memories/Admirin' You (Official Video) Karan Aujla _ Ikky _ Making Memories _ Latest Punjabi Songs 2023.mp3,assets/imgs/artist/Karan aujla/making memories/kA.jpg,Artist,assets/imgs/artist/Karan aujla/bg.jpeg,
 
 Karen Aujla,assets/imgs/artist/Karan aujla/making memories/kA.jpg,Making Memories,SOFTLY,assets/imgs/artist/Karan aujla/making memories/SOFTLY (Official Music Video) KARAN AUJLA _ IKKY _ LATEST PUNJABI SONGS 2023.mp3,
-
 
 
 
